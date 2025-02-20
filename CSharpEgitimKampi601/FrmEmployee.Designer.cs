@@ -34,7 +34,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtEmployeeSurname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtEmployeeCity = new System.Windows.Forms.TextBox();
+            this.txtEmployeeSalary = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtEmployeeName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,6 +82,7 @@
             this.btnAdd.TabIndex = 48;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtEmployeeSurname
             // 
@@ -100,12 +101,12 @@
             this.label3.TabIndex = 46;
             this.label3.Text = "Personel Soyadı:";
             // 
-            // txtEmployeeCity
+            // txtEmployeeSalary
             // 
-            this.txtEmployeeCity.Location = new System.Drawing.Point(169, 98);
-            this.txtEmployeeCity.Name = "txtEmployeeCity";
-            this.txtEmployeeCity.Size = new System.Drawing.Size(141, 22);
-            this.txtEmployeeCity.TabIndex = 45;
+            this.txtEmployeeSalary.Location = new System.Drawing.Point(169, 98);
+            this.txtEmployeeSalary.Name = "txtEmployeeSalary";
+            this.txtEmployeeSalary.Size = new System.Drawing.Size(141, 22);
+            this.txtEmployeeSalary.TabIndex = 45;
             // 
             // label4
             // 
@@ -202,7 +203,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtEmployeeSurname);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtEmployeeCity);
+            this.Controls.Add(this.txtEmployeeSalary);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtEmployeeName);
             this.Controls.Add(this.label2);
@@ -212,6 +213,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmEmployee";
             this.Text = "FrmEmployee";
+            this.Load += new System.EventHandler(this.FrmEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,7 +228,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtEmployeeSurname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtEmployeeCity;
+        private System.Windows.Forms.TextBox txtEmployeeSalary;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEmployeeName;
         private System.Windows.Forms.Label label2;
